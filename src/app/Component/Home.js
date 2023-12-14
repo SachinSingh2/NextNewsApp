@@ -37,7 +37,7 @@ export default function page() {
 
           {Loading ? null : <div className="col-sm-8 py-2" >
 
-          {News.length >= 5 ? <div style={{ borderRadius: "0px" , height:"100%" }} className="card text-white">
+          {News && News.length >= 5 ? <div style={{ borderRadius: "0px" , height:"100%" }} className="card text-white">
                 <img
                   src={News?.[5]?.urlToImage ? News[5].urlToImage : 'https://plus.unsplash.com/premium_photo-1661255378914-d0934128d91d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
 
