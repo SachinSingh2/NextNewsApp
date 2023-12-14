@@ -65,7 +65,7 @@ export default function page() {
           <div className="scrollable-box2 p-2 col-sm-4">
             <div className="multi-carousel vertical">
               <div className="multi-carousel-inner">
-                {News.map((data,index)=>{
+                {News && News.map((data,index)=>{
                   return <div key={index}> <TopNewsScrollCard Loading={Loading} data={data}  /></div>
                 })}
                 
